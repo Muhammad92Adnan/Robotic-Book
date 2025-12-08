@@ -1,0 +1,114 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2563eb;
+  --ifm-color-primary-dark: #1d4ed8;
+  --ifm-color-primary-darker: #1e40af;
+  --ifm-color-primary-darkest: #1e3a8a;
+  --ifm-color-primary-light: #3b82f6;
+  --ifm-color-primary-lighter: #60a5fa;
+  --ifm-color-primary-lightest: #93c5fd;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #3b82f6;
+  --ifm-color-primary-dark: #2563eb;
+  --ifm-color-primary-darker: #1d4ed8;
+  --ifm-color-primary-darkest: #1e3a8a;
+  --ifm-color-primary-light: #60a5fa;
+  --ifm-color-primary-lighter: #93c5fd;
+  --ifm-color-primary-lightest: #bfdbfe;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Textbook-specific styling */
+.textbook-content {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+.textbook-content h1,
+.textbook-content h2,
+.textbook-content h3 {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-weight: 600;
+}
+
+.textbook-content blockquote {
+  border-left: 4px solid var(--ifm-color-primary);
+  background-color: rgba(37, 99, 235, 0.05);
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.textbook-content .learning-objectives {
+  background-color: #f0f9ff;
+  border-left: 4px solid #3b82f6;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.textbook-content .key-takeaways {
+  background-color: #f0fdf4;
+  border-left: 4px solid #10b981;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.textbook-content .references {
+  background-color: #fafafa;
+  border-left: 4px solid #6b7280;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 0 4px 4px 0;
+  font-size: 15px;
+}
+
+/* Improve readability */
+.markdown > h1:first-child {
+  margin-bottom: 1.5rem;
+}
+
+.markdown > h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.markdown > h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.markdown > p {
+  margin-bottom: 1rem;
+}
+
+.markdown > ul,
+.markdown > ol {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.markdown > li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .textbook-content {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
