@@ -20,15 +20,15 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-username.github.io',
+  url: 'https://muhammad92adnan.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/textbook-physical-ai/',
+  baseUrl: '/Robotic-Book/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'your-username', // Usually your GitHub org/user name.
-  projectName: 'textbook-physical-ai', // Usually your repo name.
+  organizationName: 'Muhammad92Adnan', // Usually your GitHub org/user name.
+  projectName: 'Robotic-Book', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -49,7 +49,7 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/<your-username>/textbook-physical-ai/edit/main/',
+          editUrl: 'https://github.com/Muhammad92Adnan/Robotic-Book/edit/main/',
         },
         blog: false,
         theme: {
@@ -81,7 +81,7 @@ const config = {
             label: 'Textbook',
           },
           {
-            href: 'https://github.com/<your-username>/textbook-physical-ai',
+            href: 'https://github.com/Muhammad92Adnan/Robotic-Book',
             label: 'GitHub',
             position: 'right',
           },
@@ -112,7 +112,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/<your-username>/textbook-physical-ai',
+                href: 'https://github.com/Muhammad92Adnan/Robotic-Book',
               },
               {
                 label: 'Docusaurus',
