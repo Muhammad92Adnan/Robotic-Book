@@ -1,7 +1,8 @@
 {
-  "root": "textbook-physical-ai",
-  "outputDirectory": "build",
-  "installCommand": "npm install",
+  "framework": "docusaurus",
+  "rootDirectory": "textbook-physical-ai",
   "buildCommand": "npm run build",
-  "devCommand": "npm run start"
+  "outputDirectory": "build",
+  "devCommand": "npm run start",
+  "installCommand": "npm install"
 }
