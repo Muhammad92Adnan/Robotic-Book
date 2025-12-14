@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+build/
+
+# Environment variables
+.env
+
+# Local configuration
+.claude/settings.local.json
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# Temporary folders
+tmp/
+temp/
+
+# Yarn
+.yarn-cache
+
+# Distribution folder
+dist/

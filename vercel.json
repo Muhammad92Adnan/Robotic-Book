@@ -1,8 +1,27 @@
 {
   "framework": "docusaurus",
-  "rootDirectory": "textbook-physical-ai",
   "buildCommand": "npm run build",
   "outputDirectory": "build",
   "devCommand": "npm run start",
-  "installCommand": "npm install"
+  "installCommand": "npm install",
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    }
+  ]
 }
