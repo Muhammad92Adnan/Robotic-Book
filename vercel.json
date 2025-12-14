@@ -1,0 +1,7 @@
+{
+  "root": "textbook-physical-ai",
+  "outputDirectory": "build",
+  "installCommand": "npm install",
+  "buildCommand": "npm run build",
+  "devCommand": "npm run start"
+}
