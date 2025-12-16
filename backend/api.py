@@ -15,7 +15,7 @@ load_dotenv()
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 # Import the RAG components
-from retreving import retrieve, groq_client
+from retrieving import retrieve, groq_client
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
