@@ -15,7 +15,11 @@ load_dotenv()
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 # Import the RAG components
-from retrieving import retrieve, groq_client
+from retrieving import retrieve
+
+# Initialize Groq client locally
+from groq import Groq
+groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
