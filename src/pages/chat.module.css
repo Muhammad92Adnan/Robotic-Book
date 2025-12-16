@@ -1,0 +1,57 @@
+.chatMain {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.chatWrapper {
+  margin: 2rem 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.infoSection {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #25c2a0;
+}
+
+.infoSection h3 {
+  margin-top: 0;
+  color: #25c2a0;
+}
+
+.infoSection ul {
+  padding-left: 1.5rem;
+}
+
+.infoSection li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .chatWrapper {
+    margin: 1rem;
+  }
+
+  .infoSection {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
