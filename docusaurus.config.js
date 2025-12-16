@@ -14,7 +14,12 @@ const config = {
   projectName: 'Robotic-Book',
 
   onBrokenLinks: 'warn', // Changed from 'throw' to 'warn'
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn', // Deprecated in v3, will be removed in v4
+
+  // Markdown configuration to address deprecation warning
+  markdown: {
+    mermaid: false, // Disable mermaid if not used
+  },
 
   i18n: {
     defaultLocale: 'en',
@@ -88,6 +93,18 @@ const config = {
               {
                 label: 'Human Design',
                 to: '/docs/chapter-3-human-design/chapter',
+              },
+              {
+                label: 'Perception Systems',
+                to: '/docs/chapter-4-perception/chapter',
+              },
+              {
+                label: 'AI Control',
+                to: '/docs/chapter-5-ai-control/chapter',
+              },
+              {
+                label: 'Locomotion',
+                to: '/docs/chapter-6-locomotion/chapter',
               },
             ],
           },
