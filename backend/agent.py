@@ -60,7 +60,7 @@ def retrieve(query):
     result = qdrant.query_points(
         collection_name="AdnanCluster",
         query=embedding,
-        limit=5
+        limit=5,
     )
     return [point.payload["text"] for point in result.points]
 
