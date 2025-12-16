@@ -58,9 +58,9 @@ def get_embedding(text):
 def retrieve(query):
     embedding = get_embedding(query)
     result = qdrant.query_points(
-        collection_name="AdnanCluster",
+        collection_name="Robotics-book",
         query=embedding,
-        limit=5,
+        limit=5
     )
     return [point.payload["text"] for point in result.points]
 
