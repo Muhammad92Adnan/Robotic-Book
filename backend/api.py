@@ -1,28 +1,17 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from agents import Agent, Runner, OpenAIChatCompletionsModel, AsyncOpenAI
-from agents import set_tracing_disabled, function_tool
 import os
 from dotenv import load_dotenv
 import cohere
 from qdrant_client import QdrantClient
 import groq
+from openai import OpenAI
 
 # Load environment variables
 load_dotenv()
-set_tracing_disabled(disabled=True)
 
 # Initialize services using environment variables
 groq_api_key = os.getenv("GROQ_API_KEY")
-provider = AsyncOpenAI(
-    api_key=groq_api_key,
-    base_url="https://api.groq.com/openai/v1"
-)
-
-model = OpenAIChatCompletionsModel(
-    model="llama-3.1-8b-instant",
-    openai_client=provider
-)
 
 # Get API keys and URLs from environment variables
 COHERE_API_KEY = os.getenv("COHERE_API_KEY")
@@ -58,10 +47,6 @@ def retrieve_texts(query):
     )
     return [point.payload["text"] for point in result.points]
 
-@function_tool
-def retrieve(query):
-    """Function tool for the agent"""
-    return retrieve_texts(query)
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
@@ -82,9 +67,6 @@ def chat():
         if retrieved_context and len(retrieved_context) > 0:
             # Create a context string from the retrieved content
             context_str = "\n".join(retrieved_context[:3])  # Use first 3 chunks
-
-            # Use the LLM to generate a concise response based on the context
-            from openai import OpenAI
 
             # Initialize the OpenAI client with Groq API
             groq_client = OpenAI(
