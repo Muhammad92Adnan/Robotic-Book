@@ -38,27 +38,29 @@ function Chatbot() {
         }),
       });
 
-      const data = await response.json();
-
-      if (response.ok) {
+      if (!response.ok) {
+        const errorText = await response.text(); // Get error response text
+        console.error('Chat API HTTP error:', response.status, errorText); // Add debugging
+        const errorMessage = {
+          id: Date.now() + 1,
+          text: `Sorry, I encountered an error. Status: ${response.status}. Please try again.`,
+          sender: 'bot'
+        };
+        setMessages(prev => [...prev, errorMessage]);
+      } else {
+        const data = await response.json();
         const botMessage = {
           id: Date.now() + 1,
           text: data.response,
           sender: 'bot'
         };
         setMessages(prev => [...prev, botMessage]);
-      } else {
-        const errorMessage = {
-          id: Date.now() + 1,
-          text: "Sorry, I encountered an error. Please try again.",
-          sender: 'bot'
-        };
-        setMessages(prev => [...prev, errorMessage]);
       }
     } catch (error) {
+      console.error('Chat API error:', error); // Add debugging
       const errorMessage = {
         id: Date.now() + 1,
-        text: "Sorry, I'm having trouble connecting. Please try again.",
+        text: `Sorry, I'm having trouble connecting. Please try again. Error: ${error.message || 'Unknown error'}`,
         sender: 'bot'
       };
       setMessages(prev => [...prev, errorMessage]);
