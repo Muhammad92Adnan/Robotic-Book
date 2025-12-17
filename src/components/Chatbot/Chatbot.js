@@ -27,12 +27,15 @@ function Chatbot() {
     setIsLoading(true);
 
     try {
-      const response = await fetch('http://localhost:5000/api/chat', {
+      const response = await fetch('https://humaniod-book-production.up.railway.app/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ message: inputValue }),
+        body: JSON.stringify({
+          message: inputValue,
+          user_id: 'web_user'  // Adding required field
+        }),
       });
 
       const data = await response.json();
