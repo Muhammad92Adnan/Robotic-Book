@@ -27,16 +27,24 @@ function Chatbot() {
     setIsLoading(true);
 
     try {
+      // Add timeout to the fetch request
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 30000); // 30 second timeout
+
       const response = await fetch('https://humaniod-book-production.up.railway.app/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json',
         },
         body: JSON.stringify({
           message: inputValue,
           user_id: 'web_user'  // Adding required field
         }),
+        signal: controller.signal
       });
+
+      clearTimeout(timeoutId);
 
       if (!response.ok) {
         const errorText = await response.text(); // Get error response text
@@ -58,9 +66,17 @@ function Chatbot() {
       }
     } catch (error) {
       console.error('Chat API error:', error); // Add debugging
+      let errorMessageText = "Sorry, I'm having trouble connecting. Please try again.";
+
+      if (error.name === 'AbortError') {
+        errorMessageText = "Request timed out. Please try again.";
+      } else if (error.message) {
+        errorMessageText += ` Error: ${error.message}`;
+      }
+
       const errorMessage = {
         id: Date.now() + 1,
-        text: `Sorry, I'm having trouble connecting. Please try again. Error: ${error.message || 'Unknown error'}`,
+        text: errorMessageText,
         sender: 'bot'
       };
       setMessages(prev => [...prev, errorMessage]);
