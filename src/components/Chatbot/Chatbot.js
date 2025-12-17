@@ -36,12 +36,17 @@ function Chatbot() {
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json',
+          'Accept-Encoding': 'gzip, deflate, br',
+          'Cache-Control': 'no-cache',
+          'Pragma': 'no-cache',
         },
         body: JSON.stringify({
           message: inputValue,
           user_id: 'web_user'  // Adding required field
         }),
-        signal: controller.signal
+        signal: controller.signal,
+        mode: 'cors', // Explicitly set CORS mode
+        credentials: 'omit' // Don't send credentials to avoid potential CORS issues
       });
 
       clearTimeout(timeoutId);
