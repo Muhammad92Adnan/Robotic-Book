@@ -36,6 +36,12 @@ function Chatbot() {
         ? 'https://muhammad92adnan-adnan-chatbot.hf.space/ask'  // For local development, use direct HF space
         : '/api/chat'; // For production on Vercel, use proxy endpoint
 
+      console.log('Sending request to:', apiEndpoint);
+      console.log('Request payload:', {
+        message: inputValue,
+        user_id: 'website-user'
+      });
+
       const response = await fetch(apiEndpoint, {
         method: 'POST',
         headers: {
@@ -46,6 +52,8 @@ function Chatbot() {
           user_id: 'website-user'  // Adding required field
         }),
       });
+
+      console.log('Response received:', response.status);
 
       clearTimeout(timeoutId);
 
