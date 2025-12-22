@@ -1,0 +1,38 @@
+{
+  "id": "chapter-4-perception/chapter",
+  "title": "Perception Systems in Humanoids",
+  "description": "Humanoid Perception Systems",
+  "source": "@site/docs/chapter-4-perception/chapter.md",
+  "sourceDirName": "chapter-4-perception",
+  "slug": "/chapter-4-perception/chapter",
+  "permalink": "/docs/chapter-4-perception/chapter",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Muhammad92Adnan/Robotic-Book/edit/main/docs/chapter-4-perception/chapter.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "chapter_id": "chapter-4",
+    "section_id": 4,
+    "title": "Perception Systems in Humanoids",
+    "learning_objectives": [
+      "Identify key sensor types used in humanoid robotics",
+      "Explain the concept of sensor fusion",
+      "Distinguish between object detection and environmental awareness"
+    ],
+    "difficulty_level": "intermediate",
+    "example_count": 3,
+    "images": true,
+    "translation_ready": true,
+    "apa_references": []
+  },
+  "sidebar": "textbook",
+  "previous": {
+    "title": "Human-Inspired Design Principles in Humanoid Robotics",
+    "permalink": "/docs/chapter-3-human-design/chapter"
+  },
+  "next": {
+    "title": "AI, Deep Learning & Control Systems",
+    "permalink": "/docs/chapter-5-ai-control/chapter"
+  }
+}

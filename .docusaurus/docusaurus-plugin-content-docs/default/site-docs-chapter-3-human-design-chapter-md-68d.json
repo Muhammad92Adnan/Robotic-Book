@@ -1,0 +1,38 @@
+{
+  "id": "chapter-3-human-design/chapter",
+  "title": "Human-Inspired Design Principles in Humanoid Robotics",
+  "description": "Humanoid Robot Design",
+  "source": "@site/docs/chapter-3-human-design/chapter.md",
+  "sourceDirName": "chapter-3-human-design",
+  "slug": "/chapter-3-human-design/chapter",
+  "permalink": "/docs/chapter-3-human-design/chapter",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Muhammad92Adnan/Robotic-Book/edit/main/docs/chapter-3-human-design/chapter.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "chapter_id": "chapter-3",
+    "section_id": 3,
+    "title": "Human-Inspired Design Principles in Humanoid Robotics",
+    "learning_objectives": [
+      "Explain the concept of biomimicry in robotics",
+      "Analyze anthropomorphic design principles",
+      "Understand joint design and range of motion considerations"
+    ],
+    "difficulty_level": "intermediate",
+    "example_count": 3,
+    "images": true,
+    "translation_ready": true,
+    "apa_references": []
+  },
+  "sidebar": "textbook",
+  "previous": {
+    "title": "Foundations of Robotics: Systems, Structure & Core Mechanisms",
+    "permalink": "/docs/chapter-2-foundations/chapter"
+  },
+  "next": {
+    "title": "Perception Systems in Humanoids",
+    "permalink": "/docs/chapter-4-perception/chapter"
+  }
+}

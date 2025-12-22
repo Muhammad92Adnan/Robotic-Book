@@ -1,0 +1,94 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "chapter-1-introduction/chapter",
+          "docs": [
+            {
+              "id": "chapter-1-introduction/chapter",
+              "path": "/docs/chapter-1-introduction/chapter",
+              "sidebar": "textbook"
+            },
+            {
+              "id": "chapter-2-foundations/chapter",
+              "path": "/docs/chapter-2-foundations/chapter",
+              "sidebar": "textbook"
+            },
+            {
+              "id": "chapter-3-human-design/chapter",
+              "path": "/docs/chapter-3-human-design/chapter",
+              "sidebar": "textbook"
+            },
+            {
+              "id": "chapter-4-perception/chapter",
+              "path": "/docs/chapter-4-perception/chapter",
+              "sidebar": "textbook"
+            },
+            {
+              "id": "chapter-5-ai-control/chapter",
+              "path": "/docs/chapter-5-ai-control/chapter",
+              "sidebar": "textbook"
+            },
+            {
+              "id": "chapter-6-locomotion/chapter",
+              "path": "/docs/chapter-6-locomotion/chapter",
+              "sidebar": "textbook"
+            },
+            {
+              "id": "intro",
+              "path": "/docs/intro"
+            },
+            {
+              "id": "tutorial-basics/congratulations",
+              "path": "/docs/tutorial-basics/congratulations"
+            },
+            {
+              "id": "tutorial-basics/create-a-blog-post",
+              "path": "/docs/tutorial-basics/create-a-blog-post"
+            },
+            {
+              "id": "tutorial-basics/create-a-document",
+              "path": "/docs/tutorial-basics/create-a-document"
+            },
+            {
+              "id": "tutorial-basics/create-a-page",
+              "path": "/docs/tutorial-basics/create-a-page"
+            },
+            {
+              "id": "tutorial-basics/deploy-your-site",
+              "path": "/docs/tutorial-basics/deploy-your-site"
+            },
+            {
+              "id": "tutorial-basics/markdown-features",
+              "path": "/docs/tutorial-basics/markdown-features"
+            },
+            {
+              "id": "tutorial-extras/manage-docs-versions",
+              "path": "/docs/tutorial-extras/manage-docs-versions"
+            },
+            {
+              "id": "tutorial-extras/translate-your-site",
+              "path": "/docs/tutorial-extras/translate-your-site"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "textbook": {
+              "link": {
+                "path": "/docs/chapter-1-introduction/chapter",
+                "label": "chapter-1-introduction/chapter"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

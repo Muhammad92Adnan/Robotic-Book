@@ -1,0 +1,34 @@
+{
+  "id": "chapter-6-locomotion/chapter",
+  "title": "Humanoid Locomotion and Manipulation",
+  "description": "Humanoid Locomotion and Manipulation",
+  "source": "@site/docs/chapter-6-locomotion/chapter.md",
+  "sourceDirName": "chapter-6-locomotion",
+  "slug": "/chapter-6-locomotion/chapter",
+  "permalink": "/docs/chapter-6-locomotion/chapter",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Muhammad92Adnan/Robotic-Book/edit/main/docs/chapter-6-locomotion/chapter.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "chapter_id": "chapter-6",
+    "section_id": 6,
+    "title": "Humanoid Locomotion and Manipulation",
+    "learning_objectives": [
+      "Understand the stages of walking cycle in humanoid robots",
+      "Analyze center of mass concepts in locomotion",
+      "Explain arm and hand manipulation basics and stability strategies"
+    ],
+    "difficulty_level": "intermediate",
+    "example_count": 3,
+    "images": true,
+    "translation_ready": true,
+    "apa_references": []
+  },
+  "sidebar": "textbook",
+  "previous": {
+    "title": "AI, Deep Learning & Control Systems",
+    "permalink": "/docs/chapter-5-ai-control/chapter"
+  }
+}

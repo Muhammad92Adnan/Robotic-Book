@@ -1,0 +1,38 @@
+{
+  "id": "chapter-2-foundations/chapter",
+  "title": "Foundations of Robotics: Systems, Structure & Core Mechanisms",
+  "description": "Robotic System Components",
+  "source": "@site/docs/chapter-2-foundations/chapter.md",
+  "sourceDirName": "chapter-2-foundations",
+  "slug": "/chapter-2-foundations/chapter",
+  "permalink": "/docs/chapter-2-foundations/chapter",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Muhammad92Adnan/Robotic-Book/edit/main/docs/chapter-2-foundations/chapter.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "chapter_id": "chapter-2",
+    "section_id": 2,
+    "title": "Foundations of Robotics: Systems, Structure & Core Mechanisms",
+    "learning_objectives": [
+      "Identify the core components of robotic systems",
+      "Understand different structural types in robotics",
+      "Distinguish between open-loop and closed-loop control"
+    ],
+    "difficulty_level": "beginner",
+    "example_count": 4,
+    "images": true,
+    "translation_ready": true,
+    "apa_references": []
+  },
+  "sidebar": "textbook",
+  "previous": {
+    "title": "Introduction to Physical AI",
+    "permalink": "/docs/chapter-1-introduction/chapter"
+  },
+  "next": {
+    "title": "Human-Inspired Design Principles in Humanoid Robotics",
+    "permalink": "/docs/chapter-3-human-design/chapter"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "chapter-5-ai-control/chapter",
+  "title": "AI, Deep Learning & Control Systems",
+  "description": "AI Control Systems in Robotics",
+  "source": "@site/docs/chapter-5-ai-control/chapter.md",
+  "sourceDirName": "chapter-5-ai-control",
+  "slug": "/chapter-5-ai-control/chapter",
+  "permalink": "/docs/chapter-5-ai-control/chapter",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/Muhammad92Adnan/Robotic-Book/edit/main/docs/chapter-5-ai-control/chapter.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "chapter_id": "chapter-5",
+    "section_id": 5,
+    "title": "AI, Deep Learning & Control Systems",
+    "learning_objectives": [
+      "Understand the role of AI in robotics",
+      "Distinguish between machine learning and deep learning approaches",
+      "Analyze the decision pipeline: Perceive → Think → Act"
+    ],
+    "difficulty_level": "intermediate",
+    "example_count": 4,
+    "images": true,
+    "translation_ready": true,
+    "apa_references": []
+  },
+  "sidebar": "textbook",
+  "previous": {
+    "title": "Perception Systems in Humanoids",
+    "permalink": "/docs/chapter-4-perception/chapter"
+  },
+  "next": {
+    "title": "Humanoid Locomotion and Manipulation",
+    "permalink": "/docs/chapter-6-locomotion/chapter"
+  }
+}
