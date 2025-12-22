@@ -4,5 +4,10 @@
   "outputDirectory": "build",
   "devCommand": "npm run start",
   "installCommand": "npm install",
-  "trailingSlash": false
+  "trailingSlash": false,
+  "functions": {
+    "api/chat.js": {
+      "runtime": "nodejs20.x"
+    }
+  }
 }
