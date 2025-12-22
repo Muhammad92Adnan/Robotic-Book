@@ -31,7 +31,12 @@ function Chatbot() {
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), 30000); // 30 second timeout
 
-      const response = await fetch('https://muhammad92adnan-adnan-chatbot.hf.space/ask', {
+      // Use a relative path that will be handled by Vercel proxy to avoid CORS issues
+      const apiEndpoint = typeof window !== 'undefined' && window.location.hostname.includes('localhost')
+        ? 'https://muhammad92adnan-adnan-chatbot.hf.space/ask'  // For local development, use direct HF space
+        : '/api/chat'; // For production on Vercel, use proxy endpoint
+
+      const response = await fetch(apiEndpoint, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
