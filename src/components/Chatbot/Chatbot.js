@@ -31,10 +31,8 @@ function Chatbot() {
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), 30000); // 30 second timeout
 
-      // Use a relative path that will be handled by Vercel proxy to avoid CORS issues
-      const apiEndpoint = typeof window !== 'undefined' && window.location.hostname.includes('localhost')
-        ? 'https://muhammad92adnan-adnan-chatbot.hf.space/ask'  // For local development, use direct HF space
-        : '/api/chat'; // For production on Vercel, use proxy endpoint
+      // Use the Vercel proxy endpoint to avoid CORS issues
+      const apiEndpoint = '/api/chat';
 
       console.log('Sending request to:', apiEndpoint);
       console.log('Request payload:', {
